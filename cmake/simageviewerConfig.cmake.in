@@ -1,0 +1,14 @@
+IF(UNIX)
+  SET(simageviewer_LIB_NAME "libsimageviewer.a")
+ELSEIF(WIN32)
+  SET(simageviewer_LIB_NAME "simageviewer.lib")
+ENDIF(UNIX)
+
+SET(simageviewer_INCLUDE_DIRS "@simageviewer_INCLUDE_DIR@")
+SET(simageviewer_LIBRARY_DIRS "@simageviewer_LIBRARY_DIR@")
+SET(simageviewer_LIBRARIES ${simageviewer_LIB_NAME})
+
+SET(simageviewer_USE_FILE "@simageviewer_USE_FILE@")
+SET(simageviewer_CMAKE_DIR "@simageviewer_CMAKE_DIR@")
+
+MARK_AS_ADVANCED(simageviewer_LIBRARIES simageviewer_LIBRARY_DIR simageviewer_INCLUDE_DIRS simageviewer_USE_FILE)

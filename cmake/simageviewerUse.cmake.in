@@ -1,0 +1,31 @@
+############################################################
+#
+#
+# Copyright (c) SImageViewer 2020
+#
+# AUTHOR:
+# Sylvain Prigent 
+# 
+######################################################################
+## 
+### Commentary: 
+## 
+######################################################################
+## 
+### Change log:
+## 
+######################################################################
+
+if(NOT simageviewer_USE_FILE_INCLUDED)
+
+   set(simageviewer_USE_FILE_INCLUDED 1)
+
+   include_directories(${simageviewer_INCLUDE_DIRS})
+
+   link_directories(${simageviewer_LIBRARY_DIRS})
+
+   set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${simageviewer_CMAKE_DIR})
+
+   include(simageviewerDependencies)
+   
+endif(NOT simageviewer_USE_FILE_INCLUDED)

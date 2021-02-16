@@ -1,0 +1,5 @@
+.DS_Store
+.vscode/
+CMakeLists.txt.user
+build/
+Testing/
