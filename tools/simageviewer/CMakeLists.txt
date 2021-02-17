@@ -23,6 +23,6 @@ SET(SRC_FILES
 ## Exe generation
 ## #################################################################
 SET(NAME demo)
-SET(FILE ${SRC_FILES} demo.cpp )
+SET(FILE ${SRC_FILES} DemoWindow.cpp DemoWindow.h demo.cpp )
 add_executable( ${NAME} ${FILE} )
 target_link_libraries(${NAME} simageviewer ${SL_LIBRARIES})
